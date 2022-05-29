@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "author" content = "050923">
+	<title>Examples of Smart Home</title>
+	<link rel="stylesheet" type="text/css" href="style/animatedCSS.css">
+	<link rel="stylesheet" type="text/css" href="style/hover.css">
+	<link rel="stylesheet" type="text/css" href="style/external.css">
+	<link rel="stylesheet" type="text/css" href="style/exINHIS.css">
+	<link rel="stylesheet" type="text/css" href="style/accordion.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="jQuery/jquery-ui.js"></script>
+	<script src="javascript/index.js"></script>
+	<script src="javascript/externalJQuery.js"></script>
+	<script src="javascript/externalJavaScript.js"></script>
+	<style>
+		.subcontent{
+			width:98%;
+			padding:1%;
+			margin:0;
+			display:block;
+			clear:both;
+		}
+		[class*="subtitle"], .explain{
+			display:inline-table:
+		}
+		[class*="subtitle"]{
+			width:29.5%;
+			margin:0;
+			padding:1%;
+		}
+		.subtitleright{
+			border-top:0;
+			border-right:3px solid;
+			border-bottom:6px solid;
+			border-left:0;
+			border-radius:0 20% 30% 20%;
+		}
+		.subtitleleft{
+			border-top:0;
+			border-right:0;
+			border-bottom:6px solid;
+			border-left:3px solid;
+			border-radius:20% 0 20% 30%;
+		}
+		h2{
+			font-size:1.5vw;
+			font-weight:bold;
+			line-height:35px;
+		}
+		.explain{
+			width:66%;
+			padding:1%;
+			margin:0;
+		}
+		.exP{
+			font-size:1vw;
+		}
+		.left{
+			float:left;
+			text-align:left;
+		}
+		.right{
+			float:right;
+			text-align:right;
+		}
+		img{
+			background-color:#fff;
+			border-radius:3%;
+			width:75%;
+		}
+		.img1, .img2{
+			width:37.5%;
+		}
+	</style>
+</head>
+
+<body id="theme">
+<div class="iklan_kiri fadeInDown animated">
+	<a id="top" class="hvr-hang" href="#bottom">⇩</a>
+</div>
+<div id="main_tengah" style="background-image:url('../Media/Images/examples/timeline1.png');background-position:center;background-repeat:no-repeat;">
+	<div id="navigation" class="rotateInDownRight animated" style="z-index:1;">
+		<a id="ho" href="index.html">Home</a> •
+		<a id="hi" href="history.html">History</a> •
+		<div id="dropmom" onmouseenter="DropDown()" onmouseleave="DropDown()">
+			<a id="cp" href="components.html">Components</a>
+			<div id="dropdown">
+				<a href="components.html" class="dropdownPoint hvr-pop">Security</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Intercom</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Voice Activation</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Lighting</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">VHAC</a>
+			</div>
+		</div>•
+		<a id="ex" href="examples.html">Examples</a> •
+		<a id="pr" href="profiles.html">Profiles</a> •
+		<a id="co" href="contact.html">Contact</a>
+	</div>
+	<div id="content">
+		<div id="lock" class="subcontent">
+			<div class="explain left fadeInLeft animated">
+				<div class="exImg left hvr-grow">
+					<img src="../Media/Images/examples/yale-conexis-l1-smart-door-lock1.png" class="img1">
+					<img src="../Media/Images/examples/yale-conexis-l1-smart-door-lock2.jpg" class="img2">
+				</div>
+				<p class="exP left hvr-grow" style="width:70%">A Door Lock System can be opened with only connected smartphones, controlled by smartphones app without any keys needed, and equipped with internal alarm system. It also can notice the person that comes in and inform you every person who's in your home.</p>
+			</div>
+			<div class="subtitleright right fadeIn animated hvr-grow-rotate" style="border-color:#f00">
+				<h2 style="color:#dc235c;">Lock/Security System</h2>
+			</div>
+		</div>
+		
+		<div id="voice" class="subcontent">
+			<div class="subtitleleft left fadeIn animated hvr-grow-rotate" style="border-color:#0ff">
+				<h2 style="color:#4e22f2;">Voice Activation System</h2>
+			</div>
+			<div class="explain left fadeInRight animated">
+				<div class="exImg right hvr-grow">
+					<img src="../Media/Images/examples/google-home-speaker.png">
+				</div>
+				<p class="exP right hvr-grow" style="width:65%">Home Assistant device helps you in assisting your home activity or informing you any current news. It is also a voice activation device which is activated via voice from its owner</p>
+			</div>
+		</div>
+		
+		<div id="app" class="subcontent">
+			<div class="explain left fadeInLeft animated">
+				<div class="exImg left hvr-grow">
+					<img src="../Media/Images/examples/dirror-digital-mirror1.jpg" class="img1">
+					<img src="../Media/Images/examples/dirror-digital-mirror2.jpg" class="img2">
+				</div>
+				<p class="exP left hvr-grow" style="width:65%">this Digital Mirror device can be used as your "big smartphone" because it can consist every feature that any smartphones have.</p>
+			</div>
+			<div class="subtitleright right fadeIn animated hvr-grow-rotate" style="border-color:#00f">
+				<h2 style="color:#6db5f1;">Home Appliance Device</h2>
+			</div>
+			<div class="explain left fadeInLeft animated" style="clear:left;">
+				<div class="exImg left hvr-grow">
+					<img src="../Media/Images/examples/samsung-family-hub-refrigerator.png">
+				</div>
+				<p class="exP left hvr-grow" style="width:55%;clear:left">Family Hub Refrigerator will show some information for your cooking needs, such as recipe, ingredient in your refrigerator, etc. It also can be used to connect people as video call does</p>
+			</div>	
+		</div>
+		
+		<div id="light" class="subcontent">
+			<div class="subtitleleft left fadeIn animated hvr-grow-rotate" style="border-color:#0f0">
+				<h2 style="color:#55f3bd;">Lighting System</h2>
+			</div>
+			<div class="explain left fadeInRight animated">
+				<div class="exImg right hvr-grow">
+					<img src="../Media/Images/examples/philips-hue-lighting.png">
+				</div>
+				<p class="exP right hvr-grow" style="width:55%">LED Lamps with adjusted ligth are connected by the HUB controlled with your smartphone. You can set the time to turn the light on/off and its color with smartphone.</p>
+			</div>
+		</div>
+		
+		<div id="vhac" class="subcontent">
+			<div class="explain left fadeInLeft animated">
+				<div class="exImg left hvr-grow" style="width:70%">
+					<img src="../Media/Images/examples/keen-smart-ventilation.png">
+				</div>
+				<p class="exP left hvr-grow" style="width:58%">Smart Ventilation Device makes your home's air more fresher. With the same mechanic as AC but controlled by smarphone and more effective with small size.</p>
+			</div>
+			<div class="subtitleright right fadeIn animated hvr-grow-rotate" style="border-color:#ff0">
+				<h2 style="color:#26e345;">VHAC System</h2>
+			</div>
+			<div class="explain left fadeInLeft animated" style="clear:left;">
+				<div class="exImg left hvr-grow" style="width:50%">
+					<img src="../Media/Images/examples/nest-thermostat.png">
+				</div>
+				<p class="exP left hvr-grow" style="width:70%">Controlling the temperature with Smart Thermostat that heating or cooling the air with your smartphone. Also, have an automatic system that turn on/off by itself.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="iklan_kanan">
+	<div id="thButton" class="fadeInDown animated">
+		<a href="#" id="thect" onclick="themeSwitcher()">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			t<br>h<br>e<br>m<br>e<br><br>s<br>w<br>i<br>t<br>c<br>h<br>e<br>r
+		</a>
+	</div>
+</div>
+<div id="beforeFooter">
+	<a id="bottom" class="hvr-bob" href="#top">⇧</a>
+</div>
+<footer>
+	Copyright &copy; 2019 AJJ Home Inc. All Rights Reserved
+</footer>
+</body>
+</html>

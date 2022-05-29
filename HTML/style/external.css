@@ -1,0 +1,260 @@
+	@font-face{
+		font-family: LAQUATSA;
+		src: url(../../Media/Fonts/Laquatsa.ttf);
+	}
+	@font-face{
+		font-family: ROBOTOTHIN;
+		src: url(../../Media/Fonts/RobotoThin.ttf);
+	}
+	html {
+		scroll-behavior: smooth;
+	}
+	#bottom, #top{
+		
+	}
+	.light{
+		background: linear-gradient(rgba(250, 250, 250, 0), rgba(255, 255, 255, 0.3)), url("../../Media/Images/Background/footer.png") center bottom no-repeat, url("../../Media/Images/Background/lightBackground.png") center top repeat;
+		color: #010101;
+		font-family: ROBOTOTHIN;
+		font-size: 1.2vw;
+		line-height: 2vw;
+	}
+	body{
+		background: linear-gradient(rgba(250, 250, 250, 0), rgba(2, 2, 2, 0.4)), url("../../Media/Images/Background/footer.png") center bottom no-repeat, url("../../Media/Images/Background/77C.jpg") center top repeat;
+		color: #ffffff;
+		font-family: ROBOTOTHIN;
+		font-size: 1.2vw;
+		line-height: 2vw;
+		width:98%;
+		margin:0;
+		padding:1%;
+	}
+	#main_tengah{
+		width: 70%;
+		float: left;
+		margin-top: 5%;
+	}
+	.iklan_kiri, .iklan_kanan{
+		width: 14%;
+		float: left;
+		margin-top: -7px;
+	}
+	#navigation{
+		background-color:#111;
+		border-radius:5%;
+		padding:0;
+		text-align: center;
+		position: fixed;
+		top: 0;
+		width:69.2%;
+		transition: top .45s;
+	}
+	#ho, #hi, #cp, #ex, #pr, #co{
+		color: #999;
+		font-family: LAQUATSA;
+		font-size: 1.2vw;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		width:14%;
+		display:inline-block;
+		margin:0;
+		padding:1% .5%;
+		letter-spacing:1px;
+		-webkit-transition: 0.7s ease-in-out;
+		-o-transition: 0.7s ease-in-out;
+		-moz-transition: 0.7s ease-in-out;
+		-ms-transition: 0.7s ease-in-out;
+		transition: 0.7s ease-in-out;
+	}
+	#dropmom{
+		display:inline;
+	}
+	#dropdown{
+		background-color:#111;
+		position:absolute;
+		display:none;
+		font-family: LAQUATSA;
+		font-size: 1.2vw;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		width:15%;
+		margin:0 1% 1% 1%;
+		padding:0;
+		letter-spacing:1px;
+		margin-left:34%;
+		z-index:1;
+	}
+	.dropdownPoint{
+		width:99%;
+		border:0;
+		letter-spacing:1px;
+		background-color:inherit;
+		display:block;
+		margin:0;
+		padding:2% .5%;
+		color: #999;
+		line-height:1.8vw;
+		font-family: LAQUATSA;
+		font-size:1.2vw;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		z-index:999;
+	}
+	.dropdownPoint:hover{
+		background-color:#555;
+		color:#aaa;
+	}
+	#ho:hover{
+		background: linear-gradient(to right, #af0404, #ff0000, #f75f00);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	#hi:hover{
+		background: linear-gradient(to right, #f45905, #fb9224, #fbe555);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	#cp:hover{
+		background: linear-gradient(to right, #f1fa3c, #f4ff61, #a8ff3e);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	#ex:hover{
+		background: linear-gradient(to right, #32ff6a, #27aa80, #226b80);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	#pr:hover{
+		background: linear-gradient(to right, #293462, #3e64ff, #2a1a5e);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	#ct:hover{
+		background: linear-gradient(to right, #380e7f, #6915cf, #c400c6);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	#co:hover{
+		background: linear-gradient(to right, #a904af, #ff00ea, #cb005f);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	footer{
+		background: rgba(2, 2, 2, 0.7);
+		margin: 0 -.8% -.8% -.8%;
+		width: 100%;
+		padding: 5px;
+		font-size: 1vw;
+		font-weight: bolder;
+		text-align: center;
+	}
+	#beforeFooter{
+		clear: both;
+	}
+	#thButton{
+		text-align: center;
+		font-family: consolas;
+	}
+	#thect{
+		position: relative;
+		display: inline-block;
+		padding: 7.5% 15%;
+		color: #2196f3;
+		font-weight: bolder;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		text-decoration: none;
+		font-size: 1.5vw;
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	#thect:hover{
+		color: #255784;
+		background: #2196f3;
+		box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+		transition-delay: 1s;
+	}
+	#thect span{
+		position: absolute;
+		display: block;
+	}
+	#thect span:nth-child(1){
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(90deg,transparent,#2196f3);
+	}
+	#thect:hover span:nth-child(1){
+		left: 100%;
+		transition: 1s;
+	}
+	#thect span:nth-child(3){
+		bottom: 0;
+		right: -100%;
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(270deg,transparent,#2196f3);
+	}
+	#thect:hover span:nth-child(3){
+		right: 100%;
+		transition: 1s;
+		transition-delay: 0.5s;
+	}
+	#thect span:nth-child(2){
+		top: -100%;
+		right: 0;
+		width: 2px;
+		height: 100%;
+		background: linear-gradient(180deg,transparent,#2196f3);
+	}
+	#thect:hover span:nth-child(2){
+		top: 100%;
+		transition: 1s;
+		transition-delay: 0.25s;
+	}
+	#thect span:nth-child(4){
+		bottom: -100%;
+		left: 0;
+		width: 2px;
+		height: 100%;
+		background: linear-gradient(360deg,transparent,#2196f3);
+	}
+	#thect:hover span:nth-child(4){
+		bottom: 100%;
+		transition: 1s;
+		transition-delay: 0.75s;
+	}
+	#top, #bottom{
+		margin: 20px;
+		font-size: 100px;
+		text-decoration: none;
+		position: relative;
+		display: inline-block;
+	}
+	#top:hover, #bottom:hover{
+		color: #000;
+		background-color:#fff;
+		border-radius:20%;
+		opacity:.5;
+		height:80px;
+		box-shadow: 0 0 10px #123456, 0 0 40px #123456, 0 0 80px #123456;
+		transition: 1s;
+	}
+	#top:hover{
+		padding-top:47%;		
+	}
+	#bottom:hover{
+		padding-top:47%;
+		margin-top:-47%;		
+	}

@@ -1,0 +1,30 @@
+		.k1, .k2, .k3, .k4, .k5{
+			width: 85%;
+			height: 25%;
+			margin-left: 5%;
+			text-align: justify;
+			color: #000;
+			border-radius: 10px;
+		}
+		.k1j, .k2j, .k3j, .k4j, .k5j{
+			width: 90%;
+			height: 10%;
+			text-align: justify;
+			color: #000;
+			border-radius: 10px;
+		}
+		.k1, .k1j{
+			background-color: #b2ffe6;
+		}
+		.k2, .k2j{
+			background-color: #a0e4e6;
+		}
+		.k3, .k3j{
+			background-color: #67eaca;
+		}
+		.k4, .k4j{
+			background-color: #12d3cf;
+		}
+		.k5, .k5j{
+			background-color: #58b368;
+		}

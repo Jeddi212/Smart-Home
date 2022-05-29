@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "author" content = "050923">
+	<title>Components of Smart Home</title>
+	<link rel="stylesheet" type="text/css" href="style/animatedCSS.css">
+	<link rel="stylesheet" type="text/css" href="style/hover.css">
+	<link rel="stylesheet" type="text/css" href="style/external.css">
+	<link rel="stylesheet" type="text/css" href="style/exINHIS.css">
+	<link rel="stylesheet" type="text/css" href="style/accordion.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="jQuery/jquery-ui.js"></script>
+	<script src="javascript/index.js"></script>
+	<script src="javascript/externalJQuery.js"></script>
+	<script src="javascript/externalJavaScript.js"></script>
+	
+	<style>
+		.submenu{
+			background-color:#444;
+			border-radius:2%;
+			color:#888;
+			border:0;
+			display:inline-table;
+			margin:2% 25%;
+			font-size:1.2vw;
+			font-family: ROBOTOTHIN;
+			letter-spacing:6px;
+			width:50%;
+			height:50px;
+			z-index:0;
+		}
+		.submenu:hover{
+			background-color:#333;
+			color:#eee;
+			cursor:pointer;
+			-webkit-transition: 0.3s ease-in-out;
+			-o-transition: 0.3s ease-in-out;
+			-moz-transition: 0.3s ease-in-out;
+			-ms-transition: 0.3s ease-in-out;
+			transition: 0.3s ease-in-out;
+		}
+		.hideExplain{
+			width:98%;
+			padding:1%;
+		}
+		.txt1,.txt2,.compImg{
+			display:none;
+			width:32.3%;
+			margin:0 .5%;
+			font-size:1vw;
+			font-weight:bold;
+		}
+		.txt1{
+			text-align:left;
+			float:left;
+		}
+		.txt2{
+			text-align:right;
+			float:left;
+		}
+		.compImg{
+			float:left;
+			padding:2.5% 0;
+		}
+		.compImg img{
+			border-radius:1%;
+		}
+	</style>
+</head>
+
+<body id="theme">
+<div class="iklan_kiri fadeInDown animated">
+	<a id="top" class="hvr-hang" href="#bottom">⇩</a>
+</div>
+<div id="main_tengah">
+	<div id="navigation" class="rotateInDownRight animated" style="z-index:1;">
+		<a id="ho" href="index.html">Home</a> •
+		<a id="hi" href="history.html">History</a> •
+		<div id="dropmom" onmouseenter="DropDown()" onmouseleave="DropDown()">
+			<a id="cp" href="components.html">Components</a>
+			<div id="dropdown">
+				<a href="components.html" class="dropdownPoint hvr-pop">Security</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Intercom</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Voice Activation</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Lighting</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">VHAC</a>
+			</div>
+		</div>•
+		<a id="ex" href="examples.html">Examples</a> •
+		<a id="pr" href="profiles.html">Profiles</a> •
+		<a id="co" href="contact.html">Contact</a>
+	</div>
+	<div id="content">
+		<button class="submenu bounceInLeft animated hvr-outline-in" id="bsecurity">Security<br>System</button>
+		<div class="hideExplain" id="security">
+			<div class="compTxt">
+				<p id="txt1Sec" class="txt1 hvr-grow">A security system is there to protect you and raise the alarm in a big emergency like a fire or a break-in. But a smart security system doesn't stop there. It can send you a notification when your teenagers get home from school or their part-time jobs. It can show you who's at your front door, and let you talk to them, through a video doorbell. You can see an HD video feed of your kids in the back yard while you're cooking dinner.</p>
+				<div id="imgSec" class="compImg">
+					<img src="../Media/Images/components/security-img.jpg" width="100%">
+				</div>
+				<p id="txt2Sec" class="txt2 hvr-grow">It can also let you know if a window is open or door is left ajar or if you have a water leak in the basement. While some smart home gear falls under the umbrella of luxury, there’s simply no substitute for a solid home security system if you want to sleep safer and sounder even when you’re on the other side of the world relaxing on holiday. And while these systems can take a bite out of your budget, in the long run they can help you run your home with less stress and hassle while cutting costs and saving energy.</p>
+			</div>
+		</div>
+		<button class="submenu bounceInRight animated hvr-outline-in" id="bintercom">Intercom<br>System</button>
+		<div class="hideExplain" id="intercom">
+			<div class="compTxt">
+				<p id="txt1Int" class="txt1 hvr-grow">A smart intercom system offers dramatically more features than a conventional intercom system and allows you to communicate with your family through voice activated devices without having to do anything else. There are a variety of helpful convenient and entertainment options that come with your intercom system so  you can connect several rooms within your home.</p>
+				<div id="imgInt" class="compImg">
+					<img src="../Media/Images/components/intercom-img.jpg" width="100%">
+				</div>
+				<p id="txt2Int" class="txt2 hvr-grow">For example, you can use the video chat feature to talk to someone in another room, or someone outside of your front door, such as a deliveryman or mailman. You can set up your entertainment by syncing your music to play through intercoms around your house. You can even send videos around your home through a smart intercom system.</p>
+			</div>
+		</div>
+		<button class="submenu bounceInLeft animated hvr-outline-in" id="bvoiceAct">Shades, Sprinklers<br>and Music</button>
+		<div class="hideExplain" id="voiceAct">
+			<div class="compTxt">
+				<p id="txt1VoA" class="txt1 hvr-grow">Programming your lawn sprinklers to water your lawn at 5:30 in the morning has never been easier with a smart system. But now, you can control your other home's systems with just your voice.</p>
+				<div id="imgVoA" class="compImg">
+					<img src="../Media/Images/components/voiceAct-img.jpg" width="100%">
+				</div>
+				<p id="txt2VoA" class="txt2 hvr-grow">These include motorized shades and blinds, entertainment systems, lawn sprinklers, and lights. Voice activated products for your home can be especially helpful for busy families, if you're recovering from surgery, getting up in age or have physical disabilities.</p>
+			</div>
+		</div>
+		<button class="submenu bounceInRight animated hvr-outline-in" id="blighting">Light Up<br>Your World</button>
+		<div class="hideExplain" id="lighting">
+			<div class="compTxt">
+				<p id="txt1Lig" class="txt1 hvr-grow">Arguably the easiest way to upgrade your lighting is with smart bulbs. You can swap out the existing CFL or LED bulbs in your lamps and lighting fixtures with a Philips Hue, Lifx Mini, Eufy Lumos LED or many other models. These smart bulbs allow you to control your lights with your phone or through Alexa or Google Assistant.</p>
+				<div id="imgLig" class="compImg">
+					<img src="../Media/Images/components/lighting-img.jpg" width="100%">
+				</div>
+				<p id="txt2Lig" class="txt2 hvr-grow">Plus, you can schedule them to turn on at any time and dim them at will, even if you don't have a dimmer switch. If you have a lot of lamps or recessed lighting, smart bulbs can quickly become expensive. The solution? Smart light switches. These control all of the lights wired to one switch, allowing you to turn lights on and off on a schedule or with a smart assistant, without changing your existing light bulbs.<p>
+			</div>
+		</div>
+		<button class="submenu bounceInLeft animated hvr-outline-in" id="bventilation">VHAC System</button>
+		<div class="hideExplain" id="ventilation">
+			<div class="compTxt">
+				<p id="txt1Ven" class="txt1 hvr-grow">The Nest Learning Thermostat, for example, is an electronic, programmable Wi-Fi enabled thermostat that optimizes heating and cooling of your home to conserve energy. The Nest learns your family's routine, programs itself and adapts to your life and changing seasons.</p>
+				<div id="imgVen" class="compImg">
+					<img src="../Media/Images/components/ventilation-img.jpg" width="100%">
+				</div>
+				<p id="txt2Ven" class="txt2 hvr-grow">It's also ENERGY STAR certified, which means it meets standards set by the Environmental Protection Agency (EPA) or the Department of Energy (DOE), but consumes less energy than other products.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="iklan_kanan">
+	<div id="thButton" class="fadeInDown animated">
+		<a href="#" id="thect" onclick="themeSwitcher()">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			t<br>h<br>e<br>m<br>e<br><br>s<br>w<br>i<br>t<br>c<br>h<br>e<br>r
+		</a>
+	</div>
+</div>
+<div id="beforeFooter">
+	<a id="bottom" class="hvr-bob" href="#top">⇧</a>
+</div>
+<footer>
+	Copyright &copy; 2019 AJJ Home Inc. All Rights Reserved
+</footer>
+</body>
+</html>

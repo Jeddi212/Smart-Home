@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "author" content = "050923">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="style/animatedCSS.css">
+	<link rel="stylesheet" type="text/css" href="style/hover.css">
+	<link rel="stylesheet" type="text/css" href="style/external.css">
+	<link rel="stylesheet" type="text/css" href="style/exINHIS.css">
+	<link rel="stylesheet" type="text/css" href="style/accordion.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="jQuery/jquery-ui.js"></script>
+	<script src="javascript/index.js"></script>
+	<script src="javascript/externalJQuery.js"></script>
+	<script src="javascript/externalJavaScript.js"></script>
+	
+	<style>
+		#content{
+			width:100%;
+		}
+		h1{
+			padding-bottom:1%;
+			border-bottom:1.5px solid;
+		}
+		#contact{
+			width:100%;
+			text-align:center;
+			margin-bottom:1%;
+		}
+		.tengah_kiri, .tengah_kanan{
+			width: 48%;
+			margin:1%;
+			float: left;
+		}
+		#fn, #ln{
+			width: 87%;
+			height:30px;
+			border-radius : 15px;
+			display: inline-block;
+			margin: -.1px;
+			border : none;
+			padding: .5% 2.5%;
+		}
+		#message{
+			width: 87%;
+			height: 230px;
+			border-radius : 15px;
+			border : none;
+			padding: 2.5%;
+		}
+		#su{
+			width: 89.4%;
+			height:30px;
+			border-radius : 10px;
+			padding: .5% 1.2%;
+			border : none;
+			color : #222831;
+			background-color :#ffffff;
+			transition: 0.4s;
+		}	
+		
+		#su:hover{
+			color : #ffffff;
+			background-color :#222831;
+		}
+		#alamat{
+			margin:.5%;
+		}
+		.point{
+			width:100%;
+			padding:0;
+			margin:0;
+		}
+		#img1, #img2, #img3{
+			width:9%;
+			margin-right:1%;
+			float:left;
+			clear:left;
+		}
+		#socmed{
+			margin-top:10%;
+			padding-top:5%;
+			border-top:1.5px solid;
+		}
+	</style>
+</head>
+
+<body id="theme">
+<div class="iklan_kiri fadeInDown animated">
+	<a id="top" class="hvr-hang" href="#bottom">⇩</a>
+</div>
+
+<div id="main_tengah">
+
+	<div id="navigation" class="rotateInDownRight animated" style="z-index:1;">
+		<a id="ho" href="index.html">Home</a> •
+		<a id="hi" href="history.html">History</a> •
+		<div id="dropmom" onmouseenter="DropDown()" onmouseleave="DropDown()">
+			<a id="cp" href="components.html">Components</a>
+			<div id="dropdown">
+				<a href="components.html" class="dropdownPoint hvr-pop">Security</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Intercom</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Voice Activation</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Lighting</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">VHAC</a>
+			</div>
+		</div>•
+		<a id="ex" href="examples.html">Examples</a> •
+		<a id="pr" href="profiles.html">Profiles</a> •
+		<a id="co" href="contact.html">Contact</a>
+	</div>
+	
+	<div id="content" class="fadeInUp animated">
+		<div id="contact">
+			<h1>CONTACT</h1>
+			<h3>Get in touch with us!</h3>
+			<p>We would like to know about your thoughts! Give us feedback in order of improvement.</p>
+		</div>
+		<div class="tengah_kiri">
+			<form onsubmit="alert('Thank you for your feedback!')">
+				<input id="fn" type ="text" name="firstname" placeholder="Your name.." required><br><br>
+				<input id="ln" type ="email" name="lastname" placeholder="email.." required><br><br>
+				<textarea id="message" name="message" maxlength="750"placeholder="Let us know what you think" required></textarea><br><br>
+				<input id="su" type="submit" name="submit" value="Submit" >
+			</form>
+		</div>
+		
+		<div class="tengah_kanan">
+			<div id="alamat">
+				<div class="point">
+					<a href="https://www.google.com/maps/place/Institut+Teknologi+Harapan+Bangsa/@-6.8889121,107.6142106,17.25z/data=!4m5!3m4!1s0x2e68e655d11677b3:0x7cf2de165f0286ce!8m2!3d-6.8889375!4d107.6160152" target="_blank"><img id="img1" src="../Media/Images/contact/location.png" width="100%"></a>
+					<p>Dipati Ukur 80-84, Bandung, West Java, Indonesia</p>
+				</div>
+				<div class="point">
+					<a href="https://gmail.com/" target="_blank"><img id="img2" src="../Media/Images/contact/mail.png" width="100%"></a>
+					<p>smarthome@gmail.com</p>
+				</div>
+				<div class="point">
+					<img id="img3" src="../Media/Images/contact/call.png" width="100%">
+					<p>1-800-273-8255</p>
+				</div>
+			</div>
+			<div id="socmed">
+				<center>
+					<a href="https://facebook.com/" target="_blank"><img class="img4 fadeIn animated hvr-pop" src="../Media/Images/contact/facebook.png" width="15%"></a>
+					<a href="https://twitter.com/" target="_blank"><img class="img4 fadeIn animated hvr-pop" src="../Media/Images/contact/twitter.png" width="15%"></a>
+					<a href="https://instagram.com/" target="_blank"><img class="img4 fadeIn animated hvr-pop" src="../Media/Images/contact/instagram.png" width="15%"></a>
+					<a href="https://youtube.com/" target="_blank"><img class="img4 fadeIn animated hvr-pop" src="../Media/Images/contact/youtube.png" width="15%"></a>
+				</center>
+			</div>
+		</div>
+	
+	</div>
+	
+</div>
+<div class="iklan_kanan">
+	<div id="thButton" class="fadeInDown animated">
+		<a href="#" id="thect" onclick="themeSwitcher()">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			t<br>h<br>e<br>m<br>e<br><br>s<br>w<br>i<br>t<br>c<br>h<br>e<br>r
+		</a>
+	</div>
+</div>
+
+<div id="beforeFooter">
+	<a id="bottom" class="hvr-bob" href="#top">⇧</a>
+</div>
+<footer>
+	Copyright &copy; 2019 AJJ Home Inc. All Rights Reserved
+</footer>
+</body>
+</html>

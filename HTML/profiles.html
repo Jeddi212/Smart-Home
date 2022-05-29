@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "author" content = "050923">
+	<link rel="stylesheet" type="text/css" href="style/animatedCSS.css">
+	<link rel="stylesheet" type="text/css" href="style/hover.css">
+	<link rel="stylesheet" type="text/css" href="style/external.css">
+	<link rel="stylesheet" type="text/css" href="style/exINHIS.css">
+	<link rel="stylesheet" type="text/css" href="style/accordion.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="jQuery/jquery-ui.js"></script>
+	<script src="javascript/index.js"></script>
+	<script src="javascript/externalJQuery.js"></script>
+	<script src="javascript/externalJavaScript.js"></script>
+	<title>Profiles</title>
+	
+	<style>
+		#threesome{
+			width:98%;
+			padding:1%;
+		}
+		img{
+			border-radius:50%;
+		}
+		.person{
+			height:320px;
+		}
+		.gbr{
+			width :28%;
+			margin:1%;
+			float:left;
+			clear:left;
+			margin-left:35%;
+			transition:.5s;
+		}
+		img{
+			cursor:pointer;
+		}
+		.hide{
+			display:none;
+		}
+		.detail{
+			float:left;
+			width : 68%;
+			padding:1%;
+		}
+		
+		tr, th, td{
+			text-align:left;
+		}
+		
+		h2{
+			border-bottom:1.5px solid #fff;
+			transition:.5s;
+		}
+		h2:hover{
+			color:#0ff;
+			border-bottom:1.5px solid #0ff;
+		}
+	</style>
+	
+</head>
+
+<body id="theme">
+<div class="iklan_kiri fadeInDown animated">
+	<a id="top" class="hvr-hang" href="#bottom">⇩</a>
+</div>
+
+<div id="main_tengah">
+
+	<div id="navigation" class="rotateInDownRight animated" style="z-index:1;">
+		<a id="ho" href="index.html">Home</a> •
+		<a id="hi" href="history.html">History</a> •
+		<div id="dropmom" onmouseenter="DropDown()" onmouseleave="DropDown()">
+			<a id="cp" href="components.html">Components</a>
+			<div id="dropdown">
+				<a href="components.html" class="dropdownPoint hvr-pop">Security</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Intercom</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Voice Activation</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">Lighting</a>
+				<a href="components.html" class="dropdownPoint hvr-pop">VHAC</a>
+			</div>
+		</div>•
+		<a id="ex" href="examples.html">Examples</a> •
+		<a id="pr" href="profiles.html">Profiles</a> •
+		<a id="co" href="contact.html">Contact</a>
+	</div>
+	
+	<div id="profile" class="fadeInUp animated">
+		<h1>About Us</h1>
+		<hr><br>
+		<div id="threesome">
+			<div class="person">
+				<div id="gbr1" class="gbr hvr-hang fadeIn animated">
+					<img id="imgA" src="../Media/Images/profiles/image1.jpg" width="100%">
+				</div>			
+				<div class="detail hide" id="Aristo">
+					<h2>Aristo</h2>
+					<table>
+						<tr><th>Nama Lengkap</th><td> : </td><td>Aristo Demos</td></tr>
+						<tr><th>Tempat, Tanggal Lahir</th><td> : </td><td>Bandung, 13 Oktober 2000</td></tr>
+						<tr><th>Latar Belakang</th><td> : </td><td>Bekerja di Kolong Jembatan sebagai seorang system analyst.</td></tr>
+					</table>
+				</div>
+			</div>
+			<div class="person">
+				<div id="gbr2" class="gbr hvr-hang fadeIn animated">
+					<img id="imgB" src="../Media/Images/profiles/jul.jpg" width="100%">
+				</div>
+				<div class="detail hide" id="Julian">
+					<h2>Julian</h2>
+					<table>
+						<tr><th>Nama Lengkap</th><td> : </td><td>"King" Julian Ely Krishartanto</td></tr>
+						<tr><th>Tempat, Tanggal Lahir</th><td> : </td><td>Bandung, 12 Juli 2001</td></tr>
+						<tr><th>Latar Belakang</th><td> : </td><td>Bekerja di Kolong Jembatan sebagai seorang system analyst.</td></tr>
+					</table>
+				</div>
+			</div>
+			<div class="person">
+				<div id="gbr3" class="gbr hvr-hang fadeIn animated">
+					<img id="imgC" src="../Media/Images/profiles/Jeddi.jpg" width="100%">
+				</div>
+				<div class="detail hide" id="Jeddi">
+					<h2>Jeddi</h2>
+					<table>
+						<tr><th>Nama Lengkap</th><td> : </td><td>Jedediah "Jeddi" Fanuel</td></tr>
+						<tr><th>Tempat, Tanggal Lahir</th><td> : </td><td>Bandung, 28 April 2001</td></tr>
+						<tr><th>Latar Belakang</th><td> : </td><td>Bekerja di Kolong Jembatan sebagai seorang system analyst.</td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="iklan_kanan">
+	<div id="thButton" class="fadeInDown animated">
+		<a href="#" id="thect" onclick="themeSwitcher()">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			t<br>h<br>e<br>m<br>e<br><br>s<br>w<br>i<br>t<br>c<br>h<br>e<br>r
+		</a>
+	</div>
+</div>
+
+<div id="beforeFooter">
+	<a id="bottom" class="hvr-bob fadeInUp animated" href="#top">⇧</a>
+</div>
+<footer>
+	Copyright &copy; 2019 AJJ Home Inc. All Rights Reserved
+</footer>
+</body>
+</html>

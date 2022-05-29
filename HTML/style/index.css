@@ -1,0 +1,96 @@
+	header{
+		width: 100%;
+		-webkit-transition: 1s ease-in-out;
+		-o-transition: 1s ease-in-out;
+		-moz-transition: 1s ease-in-out;
+		-ms-transition: 1s ease-in-out;
+		transition: 1s ease-in-out;
+	}
+	header:hover{
+		width: 102%;
+		margin-left: -1%;
+		-webkit-transition: 1s ease-in-out;
+		-o-transition: 1s ease-in-out;
+		-moz-transition: 1s ease-in-out;
+		-ms-transition: 1s ease-in-out;
+		transition: 1s ease-in-out;
+	}
+	#navigationHome{
+		background-color:#111;
+		border-radius:1%;
+		margin: 1%;
+		padding: 1%;
+		text-align: center;
+		width:96%;
+	}
+	#dropdownHome{
+		background-color:#111;
+		position:absolute;
+		display:none;
+		margin:0 1% 1% 1%;
+		padding: 0;
+		text-align: center;
+		width:16%;
+		margin-left:32%;
+		z-index:9999999;
+	}
+	.logo{
+		border-radius: 0 0 15px 15px;
+		margin-top:-11%;
+	}
+	.kiri{
+		width: 40%;
+		text-align: left;
+		float: left;
+		z-index:-1;
+	}
+	em:hover{
+		color: #f1fa3c;
+		-webkit-transition: 0.5s ease-in-out;
+		-o-transition: 0.5s ease-in-out;
+		-moz-transition: 0.5s ease-in-out;
+		-ms-transition: 0.5s ease-in-out;
+		transition: 0.5s ease-in-out;
+	}
+	.kanan{
+		width: 40%;
+		text-align: right;
+		float: left;
+	}
+	.tengah{
+		width: 20%;
+		float: left;
+	}
+	.tengah img {
+		width: 100%;
+		opacity: 0;
+		-webkit-transition: 1s ease-in-out;
+		-o-transition: 1s ease-in-out;
+		-moz-transition: 1s ease-in-out;
+		-ms-transition: 1s ease-in-out;
+		transition: 1s ease-in-out;
+	}
+	#vid{
+		margin-left: 1%;
+		width: 100%;
+	}
+	.gambarkotak:hover{
+		opacity: 1;
+	}
+	.gambarkotak{
+		width: 100%;
+		height: 100%;
+	}
+	#question{
+		clear: both;
+	}
+	#question img{
+		vertical-align: middle;
+		width: 99%;
+	}
+	#question{
+		width: 99%;
+	}
+	.k{
+		text-align: justify;
+	}
